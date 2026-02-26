@@ -1,8 +1,8 @@
-const express = require('express');
-const router = express.Router();
-const travlrController = require('../controllers/travlr');
+var express = require('express');
+var router = express.Router();
 
-/* GET home page */
-router.get('/', travlrController.index);
+/* GET home page. */
+const mainController = require('../controllers/main');
 
+router.get('/', mainController.index);
 module.exports = router;
