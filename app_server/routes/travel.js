@@ -5,4 +5,5 @@ var router = express.Router();
 const controller = require('../controllers/travel');
 
 router.get('/', controller.travel);
+router.get('/:tripCode', controller.travelDetail);
 module.exports = router;

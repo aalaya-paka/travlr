@@ -60,6 +60,6 @@ process.on('SIGTERM', () => {
 connect();
 
 // Import Mongoose schema
-require('./app_server/models/travlr');
+require('./travlr');
 
 module.exports = mongoose;
